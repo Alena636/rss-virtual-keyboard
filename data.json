@@ -1,0 +1,706 @@
+[
+    {
+        "text": {
+            "en": "`",
+            "ru": "ё"
+        },
+        "shiftTxt": {
+            "en": "~",
+            "ru": "Ё"
+        },
+        "code": "Backquote"
+    },
+    {
+        "text": {
+            "en": "1",
+            "ru": "1"
+        },
+        "shiftTxt": {
+            "en": "!",
+            "ru": "!"
+        },
+        "code": "Dig1"
+    },
+    {
+        "text": {
+            "en": "2",
+            "ru": "2"
+        },
+        "shiftTxt": {
+            "en": "@",
+            "ru": "\""
+        },
+        "code": "Dig2"
+    },
+    {
+        "text": {
+            "en": "3",
+            "ru": "3"
+        },
+        "shiftTxt": {
+            "en": "#",
+            "ru": "№"
+        },
+        "code": "Dig3"
+    },
+    {
+        "text": {
+            "en": "4",
+            "ru": "4"
+        },
+        "shiftTxt": {
+            "en": "$",
+            "ru": ";"
+        },
+        "code": "Dig4"
+    },
+    {
+        "text": {
+            "en": "5",
+            "ru": "5"
+        },
+        "shiftTxt": {
+            "en": "%",
+            "ru": "%"
+        },
+        "code": "Dig5"
+    },
+    {
+        "text": {
+            "en": "6",
+            "ru": "6"
+        },
+        "shiftTxt": {
+            "en": "^",
+            "ru": ":"
+        },
+        "code": "Dig6"
+    },
+    {
+        "text": {
+            "en": "7",
+            "ru": "7"
+        },
+        "shiftTxt": {
+            "en": "&",
+            "ru": "?"
+        },
+        "code": "Dig7"
+    },
+    {
+        "text": {
+            "en": "8",
+            "ru": "8"
+        },
+        "shiftTxt": {
+            "en": "*",
+            "ru": "*"
+        },
+        "code": "Dig8"
+    },
+    {
+        "text": {
+            "en": "9",
+            "ru": "9"
+        },
+        "shiftTxt": {
+            "en": "(",
+            "ru": "("
+        },
+        "code": "Dig9"
+    },
+    {
+        "text": {
+            "en": "0",
+            "ru": "0"
+        },
+        "shiftTxt": {
+            "en": ")",
+            "ru": ")"
+        },
+        "code": "Dig0"
+    },
+    {
+        "text": {
+            "en": "-",
+            "ru": "-"
+        },
+        "shiftTxt": {
+            "en": "_",
+            "ru": "_"
+        },
+        "code": "Minus"
+    },
+    {
+        "text": {
+            "en": "=",
+            "ru": "="
+        },
+        "shiftTxt": {
+            "en": "+",
+            "ru": "+"
+        },
+        "code": "Equal"
+    },
+    {
+        "text": {
+            "en": "Backspace",
+            "ru": "Backspace"
+        },
+        "shiftTxt": {
+            "en": "Backspace",
+            "ru": "Backspace"
+        },
+        "code": "Backspace"
+    },
+    {
+        "text": {
+            "en": "Tab",
+            "ru": "Tab"
+        },
+        "shiftTxt": {
+            "en": "Tab",
+            "ru": "Tab"
+        },
+        "code": "Tab"
+    },
+    {
+        "text": {
+            "en": "q",
+            "ru": "й"
+        },
+        "shiftTxt": {
+            "en": "Q",
+            "ru": "Й"
+        },
+        "code": "LetterQ"
+    },
+    {
+        "text": {
+            "en": "w",
+            "ru": "ц"
+        },
+        "shiftTxt": {
+            "en": "W",
+            "ru": "Ц"
+        },
+        "code": "LetterW"
+    },
+    {
+        "text": {
+            "en": "e",
+            "ru": "у"
+        },
+        "shiftTxt": {
+            "en": "E",
+            "ru": "У"
+        },
+        "code": "LetterE"
+    },
+    {
+        "text": {
+            "en": "r",
+            "ru": "к"
+        },
+        "shiftTxt": {
+            "en": "R",
+            "ru": "К"
+        },
+        "code": "LetterR"
+    },
+    {
+        "text": {
+            "en": "t",
+            "ru": "е"
+        },
+        "shiftTxt": {
+            "en": "T",
+            "ru": "E"
+        },
+        "code": "LetterT"
+    },
+    {
+        "text": {
+            "en": "y",
+            "ru": "н"
+        },
+        "shiftTxt": {
+            "en": "Y",
+            "ru": "Н"
+        },
+        "code": "LetterY"
+    },
+    {
+        "text": {
+            "en": "u",
+            "ru": "г"
+        },
+        "shiftTxt": {
+            "en": "U",
+            "ru": "Г"
+        },
+        "code": "LetterU"
+    },
+    {
+        "text": {
+            "en": "i",
+            "ru": "ш"
+        },
+        "shiftTxt": {
+            "en": "I",
+            "ru": "Ш"
+        },
+        "code": "LetterI"
+    },
+    {
+        "text": {
+            "en": "o",
+            "ru": "щ"
+        },
+        "shiftTxt": {
+            "en": "O",
+            "ru": "Щ"
+        },
+        "code": "LetterO"
+    },
+     {
+        "text": {
+            "en": "p",
+            "ru": "з"
+        },
+        "shiftTxt": {
+            "en": "P",
+            "ru": "З"
+        },
+        "code": "LetterP"
+     },
+     {
+        "text": {
+            "en": "[",
+            "ru": "х"
+        },
+        "shiftTxt": {
+            "en": "{",
+            "ru": "Х"
+        },
+        "code": "BracketLeft"
+     },
+     {
+        "text": {
+            "en": "]",
+            "ru": "ъ"
+        },
+        "shiftTxt": {
+            "en": "}",
+            "ru": "Ъ"
+        },
+        "code": "BracketRight"
+     },
+     {
+        "text": {
+            "en": "\\",
+            "ru": "\\"
+        },
+        "shiftTxt": {
+            "en": "|",
+            "ru": "/"
+        },
+        "code": "Backslash"
+     },
+     {
+        "text": {
+            "en": "Delete",
+            "ru": "Delete"
+        },
+        "shiftTxt": {
+            "en": "Delete",
+            "ru": "Delete"
+        },
+        "code": "Delete"
+     },
+     {
+        "text": {
+            "en": "CapsLock",
+            "ru": "CapsLock"
+        },
+        "shiftTxt": {
+            "en": "CapsLock",
+            "ru": "CapsLock"
+        },
+        "code": "CapsLock"
+     },
+     {
+        "text": {
+            "en": "a",
+            "ru": "ф"
+        },
+        "shiftTxt": {
+            "en": "A",
+            "ru": "Ф"
+        },
+        "code": "LetterA"
+     },
+     {
+        "text": {
+            "en": "s",
+            "ru": "ы"
+        },
+        "shiftTxt": {
+            "en": "S",
+            "ru": "Ы"
+        },
+        "code": "LetterS"
+     },
+     {
+        "text": {
+            "en": "d",
+            "ru": "в"
+        },
+        "shiftTxt": {
+            "en": "D",
+            "ru": "В"
+        },
+        "code": "LetterD"
+     },
+     {
+        "text": {
+            "en": "f",
+            "ru": "а"
+        },
+        "shiftTxt": {
+            "en": "F",
+            "ru": "А"
+        },
+        "code": "LetterF"
+     },
+     {
+        "text": {
+            "en": "g",
+            "ru": "п"
+        },
+        "shiftTxt": {
+            "en": "G",
+            "ru": "П"
+        },
+        "code": "LetterG"
+     },
+     {
+        "text": {
+            "en": "h",
+            "ru": "р"
+        },
+        "shiftTxt": {
+            "en": "H",
+            "ru": "Р"
+        },
+        "code": "LetterH"
+     },
+     {
+        "text": {
+            "en": "j",
+            "ru": "о"
+        },
+        "shiftTxt": {
+            "en": "J",
+            "ru": "O"
+        },
+        "code": "LetterJ"
+     },
+     {
+        "text": {
+            "en": "k",
+            "ru": "л"
+        },
+        "shiftTxt": {
+            "en": "K",
+            "ru": "Л"
+        },
+        "code": "LetterK"
+     },
+     {
+        "text": {
+            "en": "l",
+            "ru": "д"
+        },
+        "shiftTxt": {
+            "en": "L",
+            "ru": "Д"
+        },
+        "code": "LetterL"
+     },
+     {
+        "text": {
+            "en": ";",
+            "ru": "ж"
+        },
+        "shiftTxt": {
+            "en": ":",
+            "ru": "Ж"
+        },
+        "code": "Semicolon"
+     },
+     {
+        "text": {
+            "en": "'",
+            "ru": "э"
+        },
+        "shiftTxt": {
+            "en": "\"",
+            "ru": "Э"
+        },
+        "code": "Quote"
+     },
+     {
+        "text": {
+            "en": "Enter",
+            "ru": "Enter"
+        },
+        "shiftTxt": {
+            "en": "Enter",
+            "ru": "Enter"
+        },
+        "code": "Enter"
+     },
+     {
+        "text": {
+            "en": "Shift",
+            "ru": "Shift"
+        },
+        "shiftTxt": {
+            "en": "Shift",
+            "ru": "Shift"
+        },
+        "code": "ShiftLeft"
+     },
+     {
+        "text": {
+            "en": "z",
+            "ru": "я"
+        },
+        "shiftTxt": {
+            "en": "Z",
+            "ru": "Я"
+        },
+        "code": "LetterZ"
+     },
+     {
+        "text": {
+            "en": "x",
+            "ru": "ч"
+        },
+        "shiftTxt": {
+            "en": "X",
+            "ru": "Ч"
+        },
+        "code": "LetterX"
+     },
+     {
+        "text": {
+            "en": "c",
+            "ru": "c"
+        },
+        "shiftTxt": {
+            "en": "C",
+            "ru": "C"
+        },
+        "code": "LetterC"
+     },
+     {
+        "text": {
+            "en": "v",
+            "ru": "м"
+        },
+        "shiftTxt": {
+            "en": "V",
+            "ru": "М"
+        },
+        "code": "LetterV"
+     },
+     {
+        "text": {
+            "en": "b",
+            "ru": "и"
+        },
+        "shiftTxt": {
+            "en": "B",
+            "ru": "И"
+        },
+        "code": "LetterB"
+     },
+     {
+        "text": {
+            "en": "n",
+            "ru": "т"
+        },
+        "shiftTxt": {
+            "en": "N",
+            "ru": "T"
+        },
+        "code": "LetterN"
+     },
+     {
+        "text": {
+            "en": "m",
+            "ru": "ь"
+        },
+        "shiftTxt": {
+            "en": "M",
+            "ru": "Ь"
+        },
+        "code": "LetterM"
+     },
+     {
+        "text": {
+            "en":",",
+            "ru": "б"
+        },
+        "shiftTxt": {
+            "en": "<",
+            "ru": "Б"
+        },
+        "code": "Comma"
+     },
+     {
+        "text": {
+            "en": ".",
+            "ru": "ю"
+        },
+        "shiftTxt": {
+            "en": ">",
+            "ru": "Ю"
+        },
+        "code": "Dot"
+     },
+     {
+        "text": {
+            "en": "/",
+            "ru": "."
+        },
+        "shiftTxt": {
+            "en": "?",
+            "ru": ","
+        },
+        "code": "Slash"
+     },
+     {
+        "text": {
+            "en": "▲",
+            "ru": "▲"
+        },
+        "shiftTxt": {
+            "en": "▲",
+            "ru": "▲"
+        },
+        "code": "ArrowUp"
+     },
+     {
+        "text": {
+            "en": "Shift",
+            "ru": "Shift"
+        },
+        "shiftTxt": {
+            "en": "Shift",
+            "ru": "Shift"
+        },
+        "code": "ShiftRight"
+     },
+     {
+        "text": {
+            "en": "Ctrl",
+            "ru": "Ctrl"
+        },
+        "shiftTxt": {
+            "en": "Ctrl",
+            "ru": "Ctrl"
+        },
+        "code": "CtrlLeft"
+     },
+     {
+        "text": {
+            "en": "Win",
+            "ru": "Win"
+        },
+        "shiftTxt": {
+            "en": "Win",
+            "ru": "Win"
+        },
+        "code": "WinLeft"
+     },
+     {
+        "text": {
+            "en": "Alt",
+            "ru": "Alt"
+        },
+        "shiftTxt": {
+            "en": "Alt",
+            "ru": "Alt"
+        },
+        "code": "AltLeft"
+     },
+     {
+        "text": {
+            "en": "",
+            "ru": ""
+        },
+        "shiftTxt": {
+            "en": "",
+            "ru": ""
+        },
+        "code": "Space"
+     },
+     {
+        "text": {
+            "en": "Alt",
+            "ru": "Alt"
+        },
+        "shiftTxt": {
+            "en": "Alt",
+            "ru": "Alt"
+        },
+        "code": "AltRight"
+     },
+     {
+        "text": {
+            "en": "◄",
+            "ru": "◄"
+        },
+        "shiftTxt": {
+            "en": "◄",
+            "ru": "◄"
+        },
+        "code": "ArrowLeft"
+     },
+     {
+        "text": {
+            "en": "▼",
+            "ru": "▼"
+        },
+        "shiftTxt": {
+            "en": "▼",
+            "ru": "▼"
+        },
+        "code": "ArrowDown"
+     },
+     {
+        "text": {
+            "en": "►",
+            "ru": "►"
+        },
+        "shiftTxt": {
+            "en": "►",
+            "ru": "►"
+        },
+        "code": "ArrowRight"
+     },
+     {
+        "text": {
+            "en": "Ctrl",
+            "ru": "Ctrl"
+        },
+        "shiftTxt": {
+            "en": "Ctrl",
+            "ru": "Ctrl"
+        },
+        "code": "CtrlRight"
+     }
+]
