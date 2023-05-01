@@ -145,13 +145,6 @@ const createWrapper = () => {
   if (language === undefined) {
     language = 'en'
   }
-
-  
-  const setLocalStorage = () => {
-    localStorage.setItem('language', language);
-    localStorage.setItem('capsCase', capsCase);
-    localStorage.setItem('currKeyboard', JSON.stringify(currKeyboard));
-  };
   
   document.addEventListener('keydown', (event) => {
     textarea.focus();
@@ -159,6 +152,9 @@ const createWrapper = () => {
     buttons.forEach((el) => {
       if (el.textContent === key && el.textContent !== 'Alt') {
         el.classList.add('active');
+      }
+      if(el.textContent === key && el.textContent !== 'Backspace') {
+        el.classList.add('active')
       }
       if (event.code === 'Delete' && el.classList.contains('delete')) {
         el.classList.add('active');
@@ -251,6 +247,9 @@ const createWrapper = () => {
       if (el.textContent === key && el.textContent !== 'Alt') {
         el.classList.remove('active');
       }
+      if(el.textContent === key && el.textContent !== 'Backspace') {
+        el.classList.remove('active')
+      }
       if (event.code === 'Delete' && el.classList.contains('delete')) {
         el.classList.remove('active');
       }
@@ -307,7 +306,9 @@ const createWrapper = () => {
     if (event.target.classList.contains('keyboard__btn')) {
       key = event.target.textContent;
     }
-    //console.log(key)
+
+    const start = textarea.selectionStart
+    const end = textarea.selectionEnd
   
     buttons.forEach((el) => {
       if (el.textContent === key && el.textContent !== 'Alt') {
@@ -317,25 +318,29 @@ const createWrapper = () => {
         el.classList.add('active');
         key = '';
         textarea.focus();
-        textarea.setRangeText('', textarea.selectionStart, textarea.selectionEnd + 1, 'end');
+        textarea.setRangeText('', start, end + 1, 'end');
+        setCursorPosition(start)
       }
       if (key === 'Tab' && el.classList.contains('tab')) {
         el.classList.add('active');
         key = '';
         textarea.focus();
-        textarea.setRangeText('\t', textarea.selectionStart, textarea.selectionEnd, 'end');
+        textarea.setRangeText('\t', start, end, 'end');
+        setCursorPosition(start + 1)
       }
       if (key === 'Backspace' && el.classList.contains('backspace')) {
         el.classList.add('active');
         key = '';
         textarea.focus();
-        textarea.setRangeText('', textarea.selectionStart > 0 ? textarea.selectionStart - 1 : 0, textarea.selectionEnd, 'end');
+        textarea.setRangeText('', end ? start - 1 : 0, start, 'end');
+        setCursorPosition(start)
       }
       if (key === 'Enter' && el.classList.contains('enter')) {
         el.classList.add('active');
         key = '';
         textarea.focus();
-        textarea.setRangeText('\n', textarea.selectionStart, textarea.selectionEnd, 'end');
+        textarea.setRangeText('\n', start, end, 'end');
+        setCursorPosition(start + 1)
       }
       if (key === 'Shift' && el.classList.contains('shift_left')) {
         el.classList.add('active');
@@ -431,7 +436,7 @@ const createWrapper = () => {
     });
   });
   
-  const changeLanguage = ((toggleLang, ...btns) => {
+ const changeLanguage = ((toggleLang, ...btns) => {
     const pressedBtns = new Set();
   
     document.addEventListener('keydown', (event) => {
@@ -453,62 +458,6 @@ const createWrapper = () => {
   }
   );
   
-  function toggleLang() {
-      if (language === 'en') {
-        language = 'ru';
-        if (document.querySelector('.caps_lock').classList.contains('active')) {
-          currKeyboard = keysRuUpperCase;
-          capsCase = true;
-          setLocalStorage();
-        } else if (!document.querySelector('.caps_lock').classList.contains('active')) {
-          currKeyboard = keysRuLowerCase;
-          capsCase = false;
-          setLocalStorage();
-        }
-        buttons.forEach((_elem, i, arr) => {
-          const btn = arr[i];
-          btn.textContent = currKeyboard[i];
-        });
-      } else if (language === 'ru') {
-        language = 'en';
-        if (document.querySelector('.caps_lock').classList.contains('active')) {
-          currKeyboard = keysEnUpperCase;
-          capsCase = true;
-          setLocalStorage();
-        } else if (!document.querySelector('.caps_lock').classList.contains('active')) {
-          currKeyboard = keysEnLowerCase;
-          capsCase = false;
-          setLocalStorage();
-        }
-        buttons.forEach((_elem, i, arr) => {
-          const btn = arr[i];
-          btn.textContent = currKeyboard[i];
-        });
-      }
-      controlLeftBtn.classList.add('active');
-      altLeftBtn.classList.add('active');
-     }
-  
-  window.addEventListener('beforeunload', setLocalStorage);
-  
-  const getLocalStorage = () => {
-    const caps = localStorage.getItem('capsCase');
-    capsCase = true;
-    if (caps === 'true') {
-      document.querySelector('.caps_lock').classList.add('active');
-    } else {
-      document.querySelector('.caps_lock').classList.remove('active');
-      capsCase = false;
-    }
-    if (localStorage.getItem('currKeyboard')) {
-      currKeyboard = JSON.parse(localStorage.getItem('currKeyboard'));
-      buttons.forEach((_elem, i, arr) => {
-        const btn = arr[i];
-        btn.textContent = currKeyboard[i];
-      });
-    }
-  }
-
   function setCursorPosition(position) {
     const end = textarea.value.length
     let newPosition = position !== undefined ? position : end
@@ -517,4 +466,3 @@ const createWrapper = () => {
     textarea.focus()
   }
   
-  window.addEventListener('load', getLocalStorage);
